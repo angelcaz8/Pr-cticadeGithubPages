@@ -22,8 +22,14 @@ Estos son algunos de los comandos Git que repasaremos al crear y gestionar este 
 1. **Inicializar el repositorio**: 
    ```bash
    git init
-git remote add origin
-git remote -v
+# Agrega todos los cambios al área de preparación (staging)
 git add .
-git commit -m "Primer commit"
+
+# Realiza un commit con un mensaje descriptivo
+git commit -m "Primera versión del proyecto HTML"
+
+# Conecta el repositorio local con el remoto en GitHub
+git remote add origin https://github.com/tu-usuario/nombre-del-repositorio.git
+
+# Envía los cambios al repositorio remoto
 git push -u origin main
