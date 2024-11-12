@@ -24,14 +24,14 @@ Estos son algunos de los comandos Git que repasaremos al crear y gestionar este 
    git init
 2. **Agrega todos los cambios al área de preparación (staging)**:
    ```bash
-    git add .
+    git add . 
 
  3. **Realiza un commit con un mensaje descriptivo**:
-  ```bash
+
  git commit -m "Primera versión del proyecto HTML"
 
 4.  **Conecta el repositorio local con el remoto en GitHub**
-   ```bash
+
   git remote add origin https://github.com/tu-usuario/nombre-del-repositorio.git
 
 5. **Envía los cambios al repositorio remoto**
