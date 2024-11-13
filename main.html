@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    ,<header>
+        <h1> Mi blog Personal</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#articulos">Artículos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contacto">
+            <h2>Formulario de contacto</h2>
+            <p> Rellena el formulario para enviarme tus comentarios o preguntas</p>
+            <!--formulario de contacto-->
+            <form>
+                <!--label es un etiqueta que nos sirve para asociar un texto descriptivo aun elemento de entreada-->
+                <label for="nombre">nombre:</label>
+                <input type="text" id="nombre" placeholder="escribe tu nombre" required>
+                <label for="email">correo electronico:</label>
+                <input type="email"  id="email" placeholder="ejemplo@correo.com" required>
+                <label for="asunto">asunto</label>
+                <select  id="asunto">
+                    <option> consulta</option>
+                    <option> sugerencia</option>
+                    <option> queja</option>
+                    <option> otro</option>
+
+                </select>
+                <label for="mensaje">mensaje:</label>
+                <textarea id="mensaje" rows="5" placeholder="escribe tu mensaje aqui..."required>
+
+                </textarea>
+                <!--fieldset nos sirve para agrupar elemnetos de un formulario relacionado. facilita la compresion navegacion de formulario, especialmente para usuarios de lectores de patalla-->
+                <fieldset>
+                    <!--no ayuda a proporcionar un titulo a mi grupo de informacion almacenado al fieldset-->
+                    <legend>genero</legend>
+                    <label for="genero-femenino"></label>
+<input type="radio" name="genero" id="genero-femenino">
+                    <label for="genero-masculino"></label>
+                    <input type="radio" name="genero" id="genero-masculino">
+                    <label for="genero-otro"></label>
+                    <input type="radio" name="genero" id="genero-otro">
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>intereses</legend>
+                    <label for="intereses-cocinar">cocinar</label>
+                    <input type="checkbox" name="cocinar" id="intereses-cocinar">
+                    <label for="intereses-meditar">meditar</label>
+                    <input type="checkbox" name="meditar" id="intereses-meditar">
+                    <label for="intereses-escribrir">escribrirr</label>
+                    <input type="checkbox" name="escribir" id="intereses-escribir">
+                </fieldset>
+                <button type="submit"> enviar </button>
+            </form>
+
+        </section>
+    </main>
+</body>
+</html>
